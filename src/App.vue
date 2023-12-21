@@ -4,7 +4,6 @@ import ChatRoom from './components/ChatRoom.vue';
 import ChatInterface from './components/ChatInterface.vue';
 
 const routes = [
-  { path: '/', component: ChatRoom },
   { path: '/server/:id', component: ChatInterface, name: 'server' },
 ];
 
@@ -20,11 +19,12 @@ const router = createRouter({
       <h1>QuickChat</h1>
     </header>
     <main>
-      
+      <router-view></router-view>
     </main>
   </div>
 </template>
 
 <style>
-
+/* Your styles here */
 </style>
+
